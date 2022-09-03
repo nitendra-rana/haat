@@ -1,5 +1,6 @@
-<h3>Haat</h3>
-### Website is Live [Here](https://nitendra-rana.github.io/haat/)
+##Haat
+### Website is Live 
+[Here](https://nitendra-rana.github.io/haat/)
 
 This is a vite-react based e-shopping site.
 
