@@ -1,0 +1,48 @@
+.favButton{
+    @apply
+    h-8
+    w-8
+    m-2
+    ml-auto
+    flex
+    text-red-400
+    hover:text-red-500
+}
+.cartButton{
+    @apply
+    block
+    h-8
+    w-8
+    m-4
+    ml-auto
+    mr-10
+    flex
+    hover:text-green-500
+    text-zinc-900/80
+    justify-center
+}
+.cartNum{
+    position: absolute;
+    width:0.7rem;
+    height: 0.7rem;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 0.55rem;
+    font-weight: 700;
+    top:-0.5rem;
+    right: 2.5rem;
+}
+.favNum{
+    position: absolute;
+    width:0.7rem;
+    height: 0.7rem;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 0.7rem;
+    font-weight: 700;
+    top:0.5rem;
+    right: 1.1rem;
+}

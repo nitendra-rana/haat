@@ -1,0 +1,51 @@
+.main{
+    @apply
+    flex
+    flex-col
+    xl:flex-row
+}
+.cardGroup{
+    @apply
+    flex
+    flex-col
+    w-full
+    xl:w-2/3
+    mx-auto
+    my-4
+}
+.payment{
+    @apply
+    w-full
+    xl:w-1/4
+}
+.paymentCard{
+    @apply
+    relative
+    xl:inline-block
+    w-auto
+    h-auto
+    shadow-sm
+    hover:shadow-lg
+    border-2
+    border-zinc-900/10
+    shadow-zinc-900/10
+    rounded-md
+    overflow-hidden
+    p-12
+    my-8
+    sm:p-4
+    sm:mx-2
+    md:mx-4
+    xl:mr-8
+    text-zinc-700
+}
+.paymentButton{
+    @apply
+    bg-blue-700
+    text-white
+    p-2
+    rounded-xl
+    mt-6
+    w-full
+
+}

@@ -1,0 +1,131 @@
+.card{
+    @apply
+    w-full
+    p-4
+}
+
+.cardLink{
+    @apply
+    flex
+    flex-col
+    shadow-sm
+    hover:shadow-lg
+    border-2
+    border-zinc-900/10
+    shadow-zinc-900/10
+    rounded-md
+    overflow-hidden
+    h-full
+}
+.favButton{
+    @apply
+    h-6
+    w-6
+    m-2
+    ml-auto
+    flex
+    hover:text-red-500
+    text-zinc-900/80
+}
+.cardHeader{
+    @apply
+    relative
+    pb-64
+    overflow-hidden
+    shadow-sm
+}
+.cardImg{
+    @apply
+    absolute
+    justify-start
+    inset-0
+    max-h-56
+    w-full
+    object-contain
+    my-4
+    px-4
+}
+.cardHeader img{
+    transition:transform .5s ease-out;
+}
+
+.cardHeader img:hover{
+    transform: scale(1.1);
+}
+.cardBody{
+    @apply
+    p-4
+    h-full
+    flex
+    flex-1
+    flex-col
+    text-sm
+    text-zinc-900/80
+}
+.cardBody .cardTitle .brand{
+    @apply
+    mt-1
+    mb-2
+}
+.brand{
+    @apply
+    font-bold
+    hover:text-blue-700
+}
+.cardTitle{
+    @apply
+    font-light
+    truncate
+}
+.rating{
+    @apply
+    flex
+    flex-row
+    mb-2
+}
+.starIcon, .emptyStarIcon{
+    @apply
+    h-4
+    w-4
+    my-auto
+}
+.starIcon{
+    @apply
+    text-yellow-400
+}
+.emptyStarIcon{
+    @apply
+    text-zinc-900/80
+}
+.addToCart{
+    @apply
+    mx-auto
+    text-center
+    w-full
+    mt-2
+}
+.addToCartButton{
+    @apply
+    inline-flex
+    justify-center
+    w-full
+    rounded-md
+    shadow-sm
+    text-sm
+    bg-blue-600
+    px-2
+    py-2
+    hover:bg-yellow-500
+}
+.shoppingCartIcon{
+    @apply
+    my-auto
+    h-5
+    w-5
+}
+.buttonText{
+    @apply
+    font-bold
+    text-zinc-100/80
+    ml-4
+}
