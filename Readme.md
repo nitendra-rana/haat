@@ -1,4 +1,4 @@
-##Haat
+Hatt
 ### Website is Live 
 [Here](https://nitendra-rana.github.io/haat/)
 
