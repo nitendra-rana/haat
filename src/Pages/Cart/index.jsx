@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState} from 'react'
 import CartCard from '../../Components/CartCard';
 import Loader from '../../Components/Loader';
 import { useHeader } from '../../Context/HeaderContext'
@@ -11,8 +11,11 @@ const Cart = () => {
     const products=productList.filter((item)=>cartIds.includes(item.id));
     const costs=products.map((item)=>item.price);
     const sum=costs.reduce((num1,num2)=>num1+num2,0);
+    const [buy, setBuy]=useState(false);
 
-    const chechOut=()=>alert("Payment Successful,Thank You for Ordering"+"\n"+"Have a Nice Day 😊");
+    const chechOut=()=>{
+            buy?setBuy(false):setBuy(true);
+    };
 
   return (
     <div className={styles.main}>
@@ -34,7 +37,7 @@ const Cart = () => {
                 <div className='flex text-lg'><span>Tax: </span><span className='ml-auto'>${(sum*0.1).toFixed(2)}</span></div>
                 <div className='flex text-lg'><span>Discount: </span><span className='ml-auto'>${(sum*0.05).toFixed(2)}</span></div>
                 <div className='flex text-3xl mt-3'><span>Final price: </span><span className='ml-auto'>${(sum).toFixed(2)}</span></div>
-                <button className={styles.paymentButton} onClick={chechOut}>CheckOut</button>
+                <button className={styles.paymentButton} onClick={chechOut}>{buy?"Cancel Item":"Checkout"}</button>
             </div>
         </div>
     </div>
